@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import random
 import string
 import telegram
@@ -25,9 +27,4 @@ def main():
     # Add command handlers
     dp.add_handler(CommandHandler("password", password, pass_args=True))
 
-    # Start the bot
-    updater.start_polling()
-    updater.idle()
-
-if __name__ == '__main__':
-    main()
+    #
